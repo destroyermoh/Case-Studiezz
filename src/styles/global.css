@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --font: 'Inter', sans-serif;
+
+  /* Dying Interface palette */
+  --di-bg:     #0A0A0C;
+  --di-sf:     #161619;
+  --di-t1:     #F2EFE8;
+  --di-t2:     #908C84;
+  --di-t3:     #5C5852;
+  --di-ac:     #E8A44A;
+  --di-bd:     rgba(255,255,255,0.08);
+
+  /* Anatomy VR palette */
+  --av-bg:     #0B0E1A;
+  --av-sf:     #111827;
+  --av-t1:     #E8F4F8;
+  --av-t2:     #7A8FA6;
+  --av-t3:     #3D5068;
+  --av-cyan:   #00D4FF;
+  --av-purple: #8B5CF6;
+  --av-teal:   #0D9488;
+  --av-bd:     rgba(0,212,255,0.1);
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: var(--font);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+::selection { background: rgba(232,164,74,0.25); color: #F2EFE8; }
+
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.1); border-radius: 4px; }
+
+/* Shared utility classes */
+.reveal { opacity: 0; transform: translateY(32px); }
